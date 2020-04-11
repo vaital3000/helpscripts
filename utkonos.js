@@ -1,4 +1,4 @@
-function startUtkonosOrder(targetDay, autoOrder = true) {
+window.startUtkonosOrder = (targetDay, autoOrder = true) => {
     const interval = setInterval(()=>{
         const daysContainers = Array.from(document.getElementsByClassName("day_interval_container"))
         if (daysContainers.findIndex(x=>x.className !== "day_interval_container inactive") !== -1){
